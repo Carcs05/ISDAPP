@@ -31,7 +31,8 @@ function Field({ label, placeholder, value, onChange, keyboardType, autoCapitali
         <TextInput
           style={[
             styles.input,
-            suffix ? { flex: 1, borderTopRightRadius: 0, borderBottomRightRadius: 0 } : null,
+            {flex: 1},
+            suffix ? { borderTopRightRadius: 0, borderBottomRightRadius: 0 } : null,
           ]}
           placeholder={placeholder}
           placeholderTextColor={COLORS.textMuted}
