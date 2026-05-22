@@ -11,7 +11,6 @@ import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import DashboardScreen from './screens/DashboardScreen';
 import AlertsScreen from './screens/AlertsScreen';
-import AnalyticsScreen from './screens/AnalyticsScreen';
 import SettingsScreen from './screens/SettingsScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import ChangePasswordScreen from './screens/ChangePasswordScreen';
@@ -54,13 +53,6 @@ function MainTabs() {
         component={AlertsScreen}
         options={{
           tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>🔔</Text>,
-        }}
-      />
-      <Tab.Screen
-        name="Analytics"
-        component={AnalyticsScreen}
-        options={{
-          tabBarIcon: ({ color }) => <Text style={{ fontSize: 20, color }}>📈</Text>,
         }}
       />
       <Tab.Screen
